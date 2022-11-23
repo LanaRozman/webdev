@@ -41,7 +41,7 @@ body {
 	display: block;
 	padding: 18px;
 	text-decoration: none;
-	background: #e3ac63;
+	background: #e8e4db;
 	color: #000;
 }
 ul li a:hover {
@@ -62,7 +62,7 @@ margin-top: 50px 0;
 	position: fixed; 
     left: 0; bottom: 0; 
     padding: 5px 40px; 
-    background: #e3ac63; 
+    background: #e8e4db; 
     color: #000; 
     width: 100%; 
 
@@ -119,58 +119,58 @@ A {
     color: #ce574f;
     text-decoration: none;
    }
-.table_blur table {
-font-size: 14px;
-border-radius: 3px;
-border-spacing: 0;
-text-align: center;
-margin: auto;
-}
-.table_blur th {
-background: #e3ac63;
-color: #2d5a51;
-padding: 5px 5px;
-text-align: center;
-margin: auto;
-}
-.table_blur th, .table_blur td {
-border-style: solid;
-border-width: 0 1px 1px 0;
-border-color: white;
-margin: auto;
-}
-.table_blur th {
-text-align:center;
-margin: auto;
-}
-.table_blur th:first-child {
-border-top-left-radius: 0px;
-}
-.table_blur th:last-child {
-border-top-right-radius: 0px;
-border-right: none;
-}
-.table_blur td {
-padding: 8px 15px;
-background: #b6aca3;
-}
-.table_blur tr:last-child td:first-child {
-border-radius: 0 0 0 10px;
-}
-.table_blur tr:last-child td:last-child {
-border-radius: 0 0 10px 0;
-}
-.table_blur tr td:last-child {
-border-right: none;
+
+
+
+.wrapper {
+  width: 100%;
 }
 
 .table_blur {
-  background: #f5f5f5;
-  text-align:center;
-  max-width: 100%;
-  width: 100%
+  background: white;
+  border-collapse: collapse;
+  text-align: centre;
+  width: 50%;
+  margin-left:25%;
+  margin-top: 100px;
 }
-
+.table_blur th {
+  border-top: 1px  #e8e4db;	
+  border-bottom: 1px  #e8e4db; 
+  box-shadow: inset 0 1px 0 #c9b79c, inset 0 -1px 0 #c9b79c;
+  background: #c9b79c;
+  color: black;
+  padding: 10px 15px;
+  position: relative;
+}
+.table_blur th:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 25%;
+  width: 100%;
+}
+.table_blur tr:nth-child(odd) {
+  background: white;
+}
+.table_blur th:first-child {
+  border-left: 1px solid #e8e4db;	
+  border-bottom:  1px solid #e8e4db;
+ 
+}
+.table_blur th:last-child {
+  border-right: 1px solid #e8e4db;
+  border-bottom:  1px solid #e8e4db;
+ 
+}
+.table_blur td {
+  border: 1px solid #e8e4db;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
 .table_blur tbody:hover td {
   color: transparent;
   text-shadow: 0 0 3px #a09f9d;
@@ -180,73 +180,3 @@ border-right: none;
   text-shadow: none;
 }
 
-div.tab{padding: 5px;max-width: 70%; overflow-x: scroll; margin-bottom: 20px;box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2)}
-
-input[type="checkbox"]:checked + 
-
-.xpandable-block {
-  max-height: 5000px;
-}
-
-
-.xpandable-block {
-  max-height: 180px;
-  overflow: hidden;
-  order: 0;
- -webkit-transition: max-height 5s;
-  transition: max-height 5s;
-}
-
-input[type="checkbox"] {
- display: none;
-}
-
-
-.labeltable {
-		color: #e3ac63;
-		text-decoration: underline;
-		font-size: 14px;
-		cursor: pointer;
-		    text-align: center;
-		margin: 20px auto;
-		display: block;
-		width: 250px;
-
-}
-.block
-    max-width: 22% 
-    margin: 0 auto
-    
-.border
-    list-style: none
-    padding: 0
-    li
-        font-family: "Trebuchet MS", "Lucida Sans"
-        padding: 7px 20px
-        margin-bottom: 10px
-        border-radius: 5px
-        border-left: 10px solid #f05d22
-        box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px 2px 5px 0 rgba(0, 0, 0, 0.1)
-        font-size: 20px
-        letter-spacing: 2px
-        transition: 0.3s all linear
-        &:nth-child(2)
-            border-color: #8bc63e
-        &:nth-child(3)
-            border-color: #fcba30
-        &:nth-child(4)
-            border-color: #1ccfc9
-        &:nth-child(5)
-            border-color: #493224
-        &:hover
-            border-left: 10px solid transparent
-        &:nth-child(1):hover
-            border-right: 10px solid #f05d22
-        &:nth-child(2):hover
-            border-right: 10px solid #8bc63e
-        &:nth-child(3):hover
-            border-right: 10px solid #fcba30
-        &:nth-child(4):hover
-            border-right: 10px solid #1ccfc9
-        &:nth-child(5):hover
-            border-right: 10px solid #493224
